@@ -1,0 +1,277 @@
+body{
+  background-color: aliceblue;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #23556a;
+  .list{
+    width: 30%;
+    max-height: 97vh;
+    overflow-y: auto;
+    &.message{
+      text-align: center;
+    }
+    .character{
+      margin: 10px 5px 10px 0;
+      padding: 6px;
+      border: 1px solid lightblue;
+      border-radius: 3px;
+      transition-duration: 0.5s;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      &:hover{
+        background-color: khaki;
+      }
+    }
+    .pages{
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      .ico{
+        padding: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        &:hover{
+          background-color: khaki;
+        }
+      }
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: aliceblue;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: lightblue;
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: khaki;
+    }
+  }
+  .right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 94vh;
+    padding: 15px;
+    .search{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border: 1px solid lightblue;
+      border-radius: 2px;
+      padding: 15px;
+      input {
+        width: 90%;
+        border: 1px solid lightblue;
+        border-radius: 2px;
+        padding: 8px;
+      }
+    }
+    .content{
+      width: 100%;
+      height: 75%;
+      display: flex;
+      border: 1px solid lightblue;
+      border-radius: 2px;
+      padding: 15px;
+      margin-top: 15px;
+      .show-character{
+        width: 100%;
+
+        .header{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .main-info{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            h1{
+              text-align: center;
+              width: 100%;
+            }
+            .description{
+              padding: 0 30px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: 1px solid lightblue;
+              border-radius: 2px;
+              margin-top: 10px;
+            }
+            .name{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .like{
+                cursor: pointer;
+                transition-duration: 0.5s;
+                border-radius: 3px;
+                padding: 5px;
+                &:hover{
+                  background-color: khaki;
+                }
+              }
+            }
+          }
+          img{
+            border-radius: 3px;
+            width: 30%;
+          }
+        }
+        .more-info{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .section-location-episode{
+            width: 100%;
+            .location{
+              padding: 0 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: 1px solid lightblue;
+              border-radius: 2px;
+              margin-top: 10px;
+            }
+            .episodes{
+              padding: 15px 30px;
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid lightblue;
+              border-radius: 2px;
+              margin-top: 10px;
+              max-height: 205px;
+              .button{
+                padding: 5px;
+                border: 1px solid lightblue;
+                border-radius: 2px;
+                width: 50%;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                  background-color: khaki;
+                }
+              }
+              .list{
+                max-height: 175px;
+                overflow-y: auto;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                .element{
+                  margin: 3px 5px;
+                  padding: 8px;
+                  border: 1px solid lightblue;
+                  border-radius: 2px;
+                  cursor: pointer;
+                  transition-duration: 0.5s;
+                  display: flex;
+                  justify-content: space-between;
+                  &:hover{
+                    background-color: khaki;
+                  }
+                }
+                /* width */
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                  background-color: aliceblue;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                  background-color: lightblue;
+                  transition-duration: 0.5s;
+                  cursor: pointer;
+                }
+
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                  background-color: khaki;
+                }
+              }
+            }
+          }
+          .created{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            align-items: center;
+            border: 1px solid lightblue;
+            border-radius: 2px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .not-selected{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .profile{
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid lightblue;
+      border-radius: 2px;
+      margin-top: 15px;
+      width: 100%;
+      transition-duration: 0.5s;
+      div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        h3{
+          margin: 8px 0;
+        }
+        .button{
+          padding: 5px;
+          transition-duration: 0.5s;
+          cursor: pointer;
+          border: 1px solid lightblue;
+          border-radius: 2px;
+          &:hover{
+            background-color: khaki;
+          }
+        }
+      }
+    }
+  }
+
+
+}
